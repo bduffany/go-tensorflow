@@ -7,5 +7,5 @@ def tensorflow_cgo_deps():
         urls = [
             "https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-2.9.0.tar.gz",
         ],
-        build_file_content = "exports_files([\"lib/libtensorflow.so\"])",
+        build_file_content = "exports_files(glob([\"**/*\"]))",
     )
