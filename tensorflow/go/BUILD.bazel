@@ -20,7 +20,11 @@ go_library(
         "tensor_handle.go",
         "version.go",
     ],
-    cdeps = ["//:libtensorflow"],
+    cdeps = [
+        "//:libgcc_s",
+        "//:libstdc++",
+        "//:libtensorflow",
+    ],
     cgo = True,
     importpath = "github.com/tensorflow/tensorflow/tensorflow/go",
     visibility = ["//visibility:public"],
